@@ -3,7 +3,7 @@ import './UXButton.css';
 
 const UXButton = (props) => {
     return (
-       <button className={`btn ${props.variant}`} >
+       <button className={`btn ${props.variant}`} onClick={props.onTap}>
            {props.text}
        </button>
     )
