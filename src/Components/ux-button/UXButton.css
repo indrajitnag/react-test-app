@@ -1,0 +1,17 @@
+.btn{
+    min-width: 100px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px grey;
+}
+.primary{
+    background-color:rgb(40, 81, 134);
+    color:white;
+}
+.info{
+    background-color:green;
+    color:white;
+}
+.danger{
+    background-color:red;
+    color:white;
+}
