@@ -3,7 +3,7 @@ import './UXTextbox.css';
 
 const UXTextbox = (props) =>{
     return (
-        <input type="text"  className="tb" onChange={props.onEdit}>
+        <input type={props.type} className="tb" onChange={props.onEdit}>
             
         </input>
     )
