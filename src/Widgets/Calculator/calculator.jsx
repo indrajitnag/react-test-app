@@ -15,8 +15,8 @@ const Calculator = (Props) => {
     return (
         <div className='calculatorWrapper'>
             <h2>{topic}</h2>
-            <UXTextbox onEdit={(e) => setFirstNumber(e.target.value)} />
-            <UXTextbox onEdit={(e) => setSecondNumber(e.target.value)} />
+            <UXTextbox value={firstNumber} onEdit={(e) => setFirstNumber(e.target.value)} />
+            <UXTextbox value={secondNumber} onEdit={(e) => setSecondNumber(e.target.value)} />
             <UXButton text={'Calulate'} variant={'Primary'} onTap={() => add()} />
             {result ? <p>Result: {result}</p> : null}
         </div>
