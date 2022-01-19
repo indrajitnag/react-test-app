@@ -1,7 +1,7 @@
 import React from "react";
 import UXButton from "../../Components/ux-button/UXButton";
-import { AiOutlineStar, AiFillStar } from "react-icons/ai";
-import {BsStarHalf} from "react-icons/bs";
+import { AiOutlineStar, AiFillStar, AiOutlineHeart } from "react-icons/ai";
+import { BsStarHalf } from "react-icons/bs";
 import './ItemsCard.css';
 
 const ItemsCard = (props) => {
@@ -12,12 +12,13 @@ const ItemsCard = (props) => {
             (
                 <div className="cardWrapper">
                     <div className="leftItem">
+                        <span id="wishlistIcon"><AiOutlineHeart /></span>
                         <div className="lefttItemChild1">
                             <img src={record.image} alt='img' height="150" width="150"></img>
                         </div>
-                        <div className="lefttItemChild2">
+                        {/* <div className="lefttItemChild2">
                             <UXButton variant={"info"} text="Add to Wishlist" />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="rightItem">
                         <div className="rightItemChild">
@@ -29,12 +30,12 @@ const ItemsCard = (props) => {
                         <div className="rightItemChild">
                             <span>Rs. {record.price}</span>
                             <span>
+                                <span id='productRating'>{record.rating.rate}</span>
                                 <AiFillStar />
                                 <AiFillStar />
                                 <AiFillStar />
                                 <AiOutlineStar />
                                 <AiOutlineStar />
-                                <span>{record.rating.rate}</span>
                             </span>
                             <span>{record.rating.count} reviews</span>
                         </div>
