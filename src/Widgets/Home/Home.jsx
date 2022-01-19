@@ -9,7 +9,7 @@ const Home = () => {
     const [apiRecord, setAPIRecord] = useState(null);
     const [isLoading, setLoading] = useState(false);
     const [errorMsg, setErrorMsg] = useState(null);
-    const [tableView, setTableView] = useState(true);
+    const [tableView, setTableView] = useState(false);
 
     const callAPI = () => {
         setLoading(true);
@@ -66,6 +66,7 @@ const Home = () => {
                             </table>
                             :
                             <ItemsCard apiRecord={apiRecord}/>
+
                         :
                         errorMsg ?
                             <h2>{errorMsg}</h2>

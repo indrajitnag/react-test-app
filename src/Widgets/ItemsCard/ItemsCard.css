@@ -1,0 +1,47 @@
+.cardWrapper{
+    display: flex;
+    flex-direction: row;
+    height:350px;
+    margin:20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.leftItem{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    align-items: center;
+}
+.lefttItemChild1{
+    flex:3;
+    padding:40px 20px 40px 20px;
+}
+.lefttItemChild2{
+    flex:1;
+   
+}
+
+.rightItem{
+    flex:2;
+    display: flex;
+    flex-direction: column;  
+    height:100%;  
+}
+
+.rightItemChild{
+    flex:1;
+}
+
+.rightItemChild span{
+    padding-left:10px;
+}
+
+.rightItemChild button:nth-child(2){
+    margin-left:10px !important; 
+}
+
+
+
+
+
